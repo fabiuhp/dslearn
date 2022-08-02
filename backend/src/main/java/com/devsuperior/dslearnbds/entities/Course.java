@@ -3,6 +3,8 @@ package com.devsuperior.dslearnbds.entities;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
@@ -16,4 +18,7 @@ public class Course {
     private String name;
     private String imgUri;
     private String imgGrayUri;
+
+    @OneToMany(mappedBy = "course")
+    private List<Offer> offers = new ArrayList<>();
 }

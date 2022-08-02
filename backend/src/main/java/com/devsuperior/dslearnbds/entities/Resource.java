@@ -1,5 +1,6 @@
 package com.devsuperior.dslearnbds.entities;
 
+import com.devsuperior.dslearnbds.enums.ResourceType;
 import lombok.*;
 
 import javax.persistence.*;

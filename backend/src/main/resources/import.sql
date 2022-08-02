@@ -12,4 +12,5 @@ INSERT INTO user_role (user_id, role_id) VALUES (2, 2);
 INSERT INTO user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO user_role (user_id, role_id) VALUES (3, 3);
-  
+
+INSERT INTO course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp', 'https://pessoascomdeficiencia.com.br/wp-content/uploads/2013/04/cursos-profissionalizantes-capacita%C3%A7%C3%A3o.jpg', 'https://pessoascomdeficiencia.com.br/wp-content/uploads/2013/04/cursos-profissionalizantes-capacita%C3%A7%C3%A3o.jpg');

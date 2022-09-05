@@ -24,3 +24,6 @@ INSERT INTO resource (title, description, position, img_Uri, resource_Type, offe
 INSERT INTO section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 1', 'Neste capitulo bla bla bla', 1, 'https://pessoascomdeficiencia.com.br/wp-content/uploads/2013/04/cursos-profissionalizantes-capacita%C3%A7%C3%A3o.jpg', 1, null);
 INSERT INTO section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 2', 'Neste capitulo 2 bla bla bla', 1, 'https://pessoascomdeficiencia.com.br/wp-content/uploads/2013/04/cursos-profissionalizantes-capacita%C3%A7%C3%A3o.jpg', 1, 1);
 INSERT INTO section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 3', 'Neste capitulo 3 bla bla bla', 1, 'https://pessoascomdeficiencia.com.br/wp-content/uploads/2013/04/cursos-profissionalizantes-capacita%C3%A7%C3%A3o.jpg', 1, 2);
+
+INSERT INTO enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2020-07-13T22:50:07.12345Z', null, true, false);
+INSERT INTO enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2020-07-13T22:50:07.12345Z', null, true, false);

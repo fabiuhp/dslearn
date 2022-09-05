@@ -27,3 +27,18 @@ INSERT INTO section (title, description, position, img_Uri, resource_id, prerequ
 
 INSERT INTO enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2020-07-13T22:50:07.12345Z', null, true, false);
 INSERT INTO enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2020-07-13T22:50:07.12345Z', null, true, false);
+
+INSERT INTO lesson (title, position, section_id) VALUES ('Aula 01 do Capitulo 01', 1, 1);
+INSERT INTO content (id, text_Content, video_Uri) VALUES (1, 'Texto de apoio', 'www.google.com');
+
+INSERT INTO lesson (title, position, section_id) VALUES ('Aula 02 do Capitulo 01', 2, 1);
+INSERT INTO content (id, text_Content, video_Uri) VALUES (2, 'Texto de apoio 2', 'www.google.com');
+
+INSERT INTO lesson (title, position, section_id) VALUES ('Aula 03 do Capitulo 01', 3, 1);
+INSERT INTO content (id, text_Content, video_Uri) VALUES (3, 'Texto de apoio 3', 'www.google.com');
+
+INSERT INTO lesson (title, position, section_id) VALUES ('Tarefa 01 do Capitulo 01', 4, 1);
+INSERT INTO task (id, description, question_Count, approval_Count, weight, due_Date) VALUES (4, 'Texto da tarefa', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2023-07-13T22:50:07.12345Z');
+
+INSERT INTO lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);

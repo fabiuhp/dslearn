@@ -5,11 +5,12 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.HashSet;
-import java.util.Objects;
+import java.util.List;
 import java.util.Set;
 
 @NoArgsConstructor
 @Entity
+@Data
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Lesson {
 
@@ -22,6 +23,9 @@ public abstract class Lesson {
     @ManyToOne
     @JoinColumn(name = "section_id")
     private Section section;
+
+    @OneToMany(mappedBy = "lesson")
+    private List<Deliver> deliveries;
 
     @ManyToMany
     @JoinTable(name = "lessons_done",
@@ -37,54 +41,5 @@ public abstract class Lesson {
         this.title = title;
         this.position = position;
         this.section = section;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Integer getPosition() {
-        return position;
-    }
-
-    public void setPosition(Integer position) {
-        this.position = position;
-    }
-
-    public Section getSection() {
-        return section;
-    }
-
-    public void setSection(Section section) {
-        this.section = section;
-    }
-
-    public Set<Enrollment> getEnrollmentsDone() {
-        return enrollmentsDone;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Lesson lesson = (Lesson) o;
-        return id.equals(lesson.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
     }
 }

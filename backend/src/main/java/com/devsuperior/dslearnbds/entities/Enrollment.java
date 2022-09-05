@@ -6,6 +6,7 @@ import lombok.*;
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Data
@@ -25,6 +26,9 @@ public class Enrollment {
     @ManyToMany(mappedBy = "enrollmentsDone")
     private Set<Lesson> lessonsDone = new HashSet<>();
 
+    @OneToMany(mappedBy = "enrollment")
+    private List<Deliver> deliveries;
+
     public Enrollment(User user, Offer offer, Instant enrollMoment, Instant refundMoment, boolean available, boolean onlyUpdate) {
         id.setUser(user);
         id.setOffer(offer);
@@ -32,21 +36,5 @@ public class Enrollment {
         this.refundMoment = refundMoment;
         this.available = available;
         this.onlyUpdate = onlyUpdate;
-    }
-
-    public User getStudent() {
-        return id.getUser();
-    }
-
-    public void setStudent(User user) {
-        id.setUser(user);
-    }
-
-    public Offer getOffer() {
-        return id.getOffer();
-    }
-
-    public void setOffer(Offer offer) {
-        id.setOffer(offer);
     }
 }

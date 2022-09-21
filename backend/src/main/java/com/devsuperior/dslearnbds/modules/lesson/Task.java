@@ -1,5 +1,6 @@
-package com.devsuperior.dslearnbds.entities;
+package com.devsuperior.dslearnbds.modules.lesson;
 
+import com.devsuperior.dslearnbds.modules.section.Section;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,7 +13,7 @@ import java.time.Instant;
 @Getter
 @Setter
 @Entity
-public class Task extends Lesson{
+public class Task extends Lesson {
 
     private String description;
     private Integer questionCount;

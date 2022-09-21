@@ -1,7 +1,7 @@
 package com.devsuperior.dslearnbds.modules.notification;
 
 import com.devsuperior.dslearnbds.modules.user.User;
-import com.devsuperior.dslearnbds.services.AuthService;
+import com.devsuperior.dslearnbds.config.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

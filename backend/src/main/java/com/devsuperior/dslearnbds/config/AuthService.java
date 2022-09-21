@@ -1,4 +1,4 @@
-package com.devsuperior.dslearnbds.services;
+package com.devsuperior.dslearnbds.config;
 
 import com.devsuperior.dslearnbds.modules.user.User;
 import com.devsuperior.dslearnbds.modules.user.UserRepository;

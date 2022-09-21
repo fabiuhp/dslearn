@@ -1,5 +1,6 @@
-package com.devsuperior.dslearnbds.entities;
+package com.devsuperior.dslearnbds.modules.lesson;
 
+import com.devsuperior.dslearnbds.modules.section.Section;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -8,7 +9,7 @@ import javax.persistence.Entity;
 @Getter
 @Setter
 @Entity
-public class Content extends Lesson{
+public class Content extends Lesson {
 
     private String textContent;
     private String videoUri;

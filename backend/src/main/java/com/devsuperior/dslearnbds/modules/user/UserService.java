@@ -1,6 +1,6 @@
 package com.devsuperior.dslearnbds.modules.user;
 
-import com.devsuperior.dslearnbds.services.AuthService;
+import com.devsuperior.dslearnbds.config.AuthService;
 import com.devsuperior.dslearnbds.services.exceptions.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

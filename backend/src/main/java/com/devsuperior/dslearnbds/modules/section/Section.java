@@ -1,5 +1,6 @@
-package com.devsuperior.dslearnbds.entities;
+package com.devsuperior.dslearnbds.modules.section;
 
+import com.devsuperior.dslearnbds.modules.resource.Resource;
 import lombok.*;
 
 import javax.persistence.*;

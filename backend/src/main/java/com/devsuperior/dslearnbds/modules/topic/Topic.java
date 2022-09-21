@@ -1,5 +1,8 @@
-package com.devsuperior.dslearnbds.entities;
+package com.devsuperior.dslearnbds.modules.topic;
 
+import com.devsuperior.dslearnbds.modules.offer.Offer;
+import com.devsuperior.dslearnbds.modules.reply.Reply;
+import com.devsuperior.dslearnbds.modules.lesson.Lesson;
 import com.devsuperior.dslearnbds.modules.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,7 +1,8 @@
-package com.devsuperior.dslearnbds.entities;
+package com.devsuperior.dslearnbds.modules.enrollment;
 
-import com.devsuperior.dslearnbds.entities.pk.EnrollmentPK;
+import com.devsuperior.dslearnbds.modules.offer.Offer;
 import com.devsuperior.dslearnbds.modules.deliver.Deliver;
+import com.devsuperior.dslearnbds.modules.lesson.Lesson;
 import com.devsuperior.dslearnbds.modules.user.User;
 import lombok.*;
 

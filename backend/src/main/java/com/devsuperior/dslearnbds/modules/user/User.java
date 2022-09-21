@@ -1,5 +1,7 @@
-package com.devsuperior.dslearnbds.entities;
+package com.devsuperior.dslearnbds.modules.user;
 
+import com.devsuperior.dslearnbds.entities.Role;
+import com.devsuperior.dslearnbds.modules.notification.Notification;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

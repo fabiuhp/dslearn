@@ -1,7 +1,7 @@
 package com.devsuperior.dslearnbds.config.components;
 
-import com.devsuperior.dslearnbds.entities.User;
-import com.devsuperior.dslearnbds.repositories.UserRepository;
+import com.devsuperior.dslearnbds.modules.user.User;
+import com.devsuperior.dslearnbds.modules.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;

@@ -1,6 +1,5 @@
-package com.devsuperior.dslearnbds.entities.dto;
+package com.devsuperior.dslearnbds.modules.user;
 
-import com.devsuperior.dslearnbds.entities.User;
 import lombok.*;
 
 @Getter

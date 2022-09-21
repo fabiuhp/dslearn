@@ -1,7 +1,7 @@
 package com.devsuperior.dslearnbds.services;
 
-import com.devsuperior.dslearnbds.entities.User;
-import com.devsuperior.dslearnbds.repositories.UserRepository;
+import com.devsuperior.dslearnbds.modules.user.User;
+import com.devsuperior.dslearnbds.modules.user.UserRepository;
 import com.devsuperior.dslearnbds.services.exceptions.ForbiddenException;
 import com.devsuperior.dslearnbds.services.exceptions.UnauthorizedException;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.devsuperior.dslearnbds.entities.pk;
 
 import com.devsuperior.dslearnbds.entities.Offer;
-import com.devsuperior.dslearnbds.entities.User;
+import com.devsuperior.dslearnbds.modules.user.User;
 import lombok.*;
 
 import javax.persistence.*;

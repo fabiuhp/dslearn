@@ -1,6 +1,6 @@
-package com.devsuperior.dslearnbds.repositories;
+package com.devsuperior.dslearnbds.modules.user;
 
-import com.devsuperior.dslearnbds.entities.User;
+import com.devsuperior.dslearnbds.modules.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

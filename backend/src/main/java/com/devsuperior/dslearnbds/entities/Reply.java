@@ -1,12 +1,12 @@
 package com.devsuperior.dslearnbds.entities;
 
+import com.devsuperior.dslearnbds.modules.user.User;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 @Entity

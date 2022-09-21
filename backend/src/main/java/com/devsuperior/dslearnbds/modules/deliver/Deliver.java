@@ -1,6 +1,8 @@
-package com.devsuperior.dslearnbds.entities;
+package com.devsuperior.dslearnbds.modules.deliver;
 
-import com.devsuperior.dslearnbds.entities.enums.DeliverStatus;
+import com.devsuperior.dslearnbds.entities.Enrollment;
+import com.devsuperior.dslearnbds.entities.Lesson;
+import com.devsuperior.dslearnbds.modules.deliver.DeliverStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

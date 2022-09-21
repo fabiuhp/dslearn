@@ -1,5 +1,6 @@
 package com.devsuperior.dslearnbds.entities;
 
+import com.devsuperior.dslearnbds.modules.deliver.Deliver;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

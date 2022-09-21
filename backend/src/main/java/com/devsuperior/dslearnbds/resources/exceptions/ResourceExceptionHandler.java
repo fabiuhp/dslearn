@@ -55,13 +55,13 @@ public class ResourceExceptionHandler {
     }
 
     @ExceptionHandler(ForbiddenException.class)
-    public ResponseEntity<OAuthCustomError> forbidden(MethodArgumentNotValidException e, HttpServletRequest httpServletRequest) {
+    public ResponseEntity<OAuthCustomError> forbidden(ForbiddenException e, HttpServletRequest httpServletRequest) {
         OAuthCustomError error = new OAuthCustomError("Forbidden", e.getMessage());
         return ResponseEntity.status(HttpStatus.FORBIDDEN).body(error);
     }
 
     @ExceptionHandler(UnauthorizedException.class)
-    public ResponseEntity<OAuthCustomError> unauthorized(MethodArgumentNotValidException e, HttpServletRequest httpServletRequest) {
+    public ResponseEntity<OAuthCustomError> unauthorized(UnauthorizedException e, HttpServletRequest httpServletRequest) {
         OAuthCustomError error = new OAuthCustomError("Unauthorized", e.getMessage());
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(error);
     }

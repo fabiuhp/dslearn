@@ -17,10 +17,14 @@ public class UserService implements UserDetailsService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private AuthService authService;
+
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
     @Transactional(readOnly = true)
     public UserDto findById(Long id) {
+        authService.validateSelfOrAdmin(id);
         User user = userRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Entidade não encontrada"));
         return new UserDto(user);
     }
